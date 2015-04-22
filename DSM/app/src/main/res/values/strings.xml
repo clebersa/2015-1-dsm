@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DSM</string>
+    <string name="title_activity_login">Login</string>
+
+    <string name="ajuda">\?</string>
+    <string name="sing_up">Sign Up for Facebook</string>
+    <string name="action_settings">Settings</string>
+</resources>

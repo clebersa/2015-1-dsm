@@ -1,0 +1,114 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="br.ufg.inf.es.cleber.dsm.c20150417.Login"
+    android:background="#ff136db5" >
+
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="181dp"
+        android:id="@+id/logo_layout"
+        android:gravity="center"
+        android:weightSum="1">
+
+
+        <ImageView
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:layout_gravity="center"
+            android:src="@drawable/fb_logo"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fields_layout">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/input_size"
+            android:id="@+id/login"
+            android:background="#ffffffff"
+            android:editable="false"
+            android:inputType="text"
+            android:layout_marginBottom="@dimen/default_margin"
+            android:layout_marginTop="@dimen/default_margin"
+            android:nestedScrollingEnabled="false"
+            android:padding="10dp"
+            android:hint="Email or Phone" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/input_size"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/password"
+            android:background="#ffffffff"
+            android:layout_marginBottom="@dimen/default_margin"
+            android:layout_marginTop="@dimen/default_margin"
+            android:padding="10dp"
+            android:hint="Password" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/input_size"
+            android:text="Log In"
+            android:id="@+id/login_button"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/default_margin"
+            android:layout_marginTop="@dimen/default_margin"
+            android:enabled="true"
+            android:background="#ff115ea4"
+            android:singleLine="true"
+            android:textColor="#ffffffff"
+            android:capitalize="none" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/footer_layout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sing_up"
+            android:id="@+id/sing_up_link"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffffff"
+            android:textIsSelectable="false" />
+
+        <Button
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:text="@string/ajuda"
+            android:id="@+id/help_button"
+            android:singleLine="true"
+            android:textColor="#ffffffff"
+            android:focusable="false"
+            android:enabled="true"
+            android:background="#ff115ea4"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:capitalize="none" />
+
+    </RelativeLayout>
+</LinearLayout>
